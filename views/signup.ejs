@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="form-box" id="register-form">
+            <form action="/post-signup" method="post">
+                <h2>Register</h2>
+                <input type="text" name="name" placeholder="name" >
+                <input type="email" name="email" placeholder="Email" >
+                <input type="password" name="password" placeholder="password" >
+                <!-- <select name="role">
+                    <option value="">--select Role--</option>
+                    <option value="user">user</option>
+                    <option value="admin">Admin</option>
+                </select> -->
+                <button type="submit" name="register">Register</button>
+                <p>Already have an account? <a href="http://localhost:3000/login-user">Login</a></p>
+            </form>
+        </div>
+</body>
+</html>

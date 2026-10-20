@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap-grid.min.css"
+        integrity="sha512-dOjUSaLkr6G2pwQ7ry9juX+iXw5602zg1kg8yH+guR3uSEidGyCnOEQnGlr7xwu/8WE+pVm1ZNqaIs5ETTIJQg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            /* background-color: aqua; */
+        }
+
+        body {
+            padding: 10px;
+            height: 100vh;
+            background-color: rgb(153, 223, 223);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .color1 {
+            background-color: rgb(36, 36, 87);
+            width: 15%;
+            height: 100%;
+            /* border: 1px solid red; */
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .color2 {
+            background-color: rgb(153, 223, 223);
+            /* background-color: rgb(238, 234, 233); */
+            width: 85%;
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            gap: 5px;
+        }
+
+        .flex-cont {
+            display: flex;
+        }
+
+
+        .div-1 {
+            /* border: 1px solid black; */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .subMain2 {
+            height: 80%;
+            width: 100%;
+            border-radius: 10px;
+            /* border: 1px solid red; */
+            background-color: white;
+
+        }
+
+        .subMain1 {
+            height: 20%;
+            width: 100%;
+            border-radius: 10px;
+            /* border: 1px solid rgb(0, 0, 0); */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .headDiv1 {
+            height: 50%;
+            width: 300px;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                border: none;
+                width: 80%;
+                height: 65%;
+                border-radius: 10px;
+                padding: 9px;
+                background-color: rgb(244, 236, 236);
+
+            }
+
+
+
+        }
+
+        .headDiv2 {
+            height: 50%;
+            width: 300px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5px;
+            align-items: center;
+
+
+            div {
+                height: 60%;
+                /* border: 1px solid black; */
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    height: 30px;
+                    width: 30px;
+                    color: rgb(39, 33, 33);
+                }
+            }
+        }
+
+        aside {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                padding-inline: 10px;
+                font-weight: 600;
+                color: white;
+                /* border: 1px solid black; */
+                padding-block: 5px;
+
+                svg {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div-1">
+        <aside class=" color1">
+            <div style="margin-bottom: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        d="M41.829 14.197v19.606L24 44.5L6.172 33.803V14.197L24 3.5z" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        d="m24 34.063l8.863-5.275v-9.576L24 13.937l-8.863 5.275v9.576zm8.909-14.817l8.92 5.343m-26.432 14.67L24 34.063m-8.863-14.885V8.843" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.76 28.235v-5.304q0-1.05 1.063-1.05h6.273q1.144 0 1.144 1.05v5.304q0 1.065-1.063 1.064h-6.354q-1.063 0-1.063-1.064" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.887 21.882c-.539-4.24 4.765-4.24 4.226 0M24 23.995c.875 0 1.588.713 1.588 1.588s-.713 1.589-1.588 1.589s-1.588-.714-1.588-1.589s.713-1.588 1.588-1.588" />
+                </svg>
+
+                <p>Edu Test</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M19 11a2 2 0 0 1 1.995 1.85L21 13v6a2 2 0 0 1-1.85 1.995L19 21h-4a2 2 0 0 1-1.995-1.85L13 19v-6a2 2 0 0 1 1.85-1.995L15 11zm0-8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+                        class="duoicon-secondary-layer" opacity=".3" />
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M9 3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+                        class="duoicon-primary-layer" />
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M9 15a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2z"
+                        class="duoicon-secondary-layer" opacity=".3" />
+                </svg>
+
+                <p>Dashboard</p>
+
+            </div>
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M18 2H6v2h1v13c0 2.76 2.24 5 5 5s5-2.24 5-5v-1h-4v-2h4v-2h-4v-2h4V8h-4V6h4V4h1z" />
+                </svg>
+
+                <p>test</p>
+            </div>
+
+
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M18.143 20.856Q18 20.713 18 20.5V18h-2.5q-.213 0-.356-.144T15 17.499t.144-.356T15.5 17H18v-2.5q0-.213.144-.356t.357-.144t.356.144t.143.356V17h2.5q.213 0 .356.144t.144.357t-.144.356T21.5 18H19v2.5q0 .213-.144.356t-.357.144t-.356-.144M6.68 20.025q-1.122 0-1.907-.774t-.785-1.88q0-1.114.785-1.893q.785-.78 1.907-.78q-1.122 0-1.907-.78t-.785-1.894t.785-1.893t1.907-.779q-1.122 0-1.907-.76t-.785-1.88q0-1.143.779-1.927Q5.544 4 6.669 4t1.895.791q.769.792.788 1.907q0-1.115.785-1.907Q10.922 4 12.044 4h5.253q1.126 0 1.914.789T20 6.703q0 1.104-.788 1.876t-1.91.773q1.177.006 1.98.846q.805.84.712 2.018q-.378-.099-.727-.145q-.35-.046-.717-.046q-2.384 0-3.967 1.625T13 17.629q0 .627.142 1.205q.143.58.447 1.191h-1.545q-1.115 0-1.913-.77t-.779-1.884q-.02 1.116-.793 1.885q-.774.769-1.88.769m-.02-11.66q.695 0 1.194-.489q.499-.49.499-1.193T7.866 5.49T6.665 5t-1.198.487t-.48 1.205q0 .695.49 1.184t1.184.49m4.538-.02h6.956V5h-6.956zm-1.846 9.025q0-1.114.78-1.893q.78-.78 1.893-.78q-1.114 0-1.893-.786q-.78-.786-.78-1.893q0 1.107-.78 1.893t-1.893.786q1.114 0 1.893.78q.78.78.78 1.893m0-5.352q0-1.12.78-1.894t1.893-.773q-1.114 0-1.893-.774q-.78-.774-.78-1.88q0 1.106-.78 1.88t-1.893.774q1.114 0 1.893.773q.78.774.78 1.894" />
+                </svg>
+                <p>classes
+
+
+                    <% if( user){ %>
+                        <%= (user.id) %>
+                            <% } %>
+                </p>
+            </div>
+            <div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M10 13H8c-2.76 0-5 2.24-5 5v1c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-1c0-2.76-2.24-5-5-5m-5 5c0-1.65 1.35-3 3-3h2c1.65 0 3 1.35 3 3zm7.73-11.49c-.08-.22-.19-.42-.3-.62v-.01c-.69-1.14-1.93-1.89-3.42-1.89c-2.28 0-4 1.72-4 4s1.72 4 4 4c1.49 0 2.73-.74 3.42-1.89v-.01c.12-.2.22-.4.3-.62c.02-.06.03-.12.05-.18c.06-.17.11-.34.15-.52c.05-.25.07-.51.07-.78s-.03-.53-.07-.78c-.03-.18-.09-.35-.15-.52c-.02-.06-.03-.12-.05-.18M9 10c-1.18 0-2-.82-2-2s.82-2 2-2s2 .82 2 2s-.82 2-2 2m6 0q-.165 0-.33-.03c-.22.66-.56 1.27-.98 1.81c.41.13.84.22 1.31.22c2.28 0 4-1.72 4-4s-1.72-4-4-4c-.47 0-.9.09-1.31.22c.43.53.76 1.14.98 1.81c.11-.01.21-.03.33-.03c1.18 0 2 .82 2 2s-.82 2-2 2m1 3h-1.11c.6.58 1.08 1.27 1.44 2.03C17.83 15.2 19 16.46 19 18h-2v1c0 .35-.07.69-.18 1H20c.55 0 1-.45 1-1v-1c0-2.76-2.24-5-5-5" />
+                </svg>
+
+
+
+                <p>Group</p>
+            </div>
+
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M21 4H3c-.55 0-1 .45-1 1v14c0 .55.45 1 1 1h18c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1M4 6h16v2H4zm5 12v-4h2v4zm4 0v-4h2v4zm4 0v-5c0-.55-.45-1-1-1H8c-.55 0-1 .45-1 1v5H4v-8h16v8z" />
+                </svg>
+                <p>departments</p>
+            </div>
+
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path d="M0 0h16v16H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M4.988 8A3.015 3.015 0 0 1 8 4.989a3.011 3.011 0 1 1-3.01 3.01m.955-.852a2.226 2.226 0 1 0 4.114 1.704a2.226 2.226 0 0 0-4.114-1.704"
+                        clip-rule="evenodd" />
+                    <path fill="currentColor"
+                        d="M1.2 10.19a.4.4 0 0 1 .05-.156l1.14-1.999v-.066L1.252 5.964a.4.4 0 0 1-.03-.316a7.2 7.2 0 0 1 1.353-2.361a.4.4 0 0 1 .305-.138l2.287-.008l.047-.028l1.159-1.992A.4.4 0 0 1 6.639.93a7.1 7.1 0 0 1 2.719.003a.4.4 0 0 1 .27.19l1.153 1.992l.047.027l2.29.01a.4.4 0 0 1 .302.14a7.2 7.2 0 0 1 1.358 2.356q.021.06.021.126a.4.4 0 0 1-.05.19l-1.14 2.001v.066l1.139 2.003a.4.4 0 0 1 .03.317a7.2 7.2 0 0 1-1.354 2.361a.4.4 0 0 1-.308.14l-2.287.007l-.048.028l-1.155 1.991a.4.4 0 0 1-.267.19a7.1 7.1 0 0 1-2.718 0a.4.4 0 0 1-.27-.19l-1.153-1.99l-.048-.026l-2.289-.01a.4.4 0 0 1-.303-.14a7.2 7.2 0 0 1-1.358-2.359a.4.4 0 0 1-.02-.162m1.94-2.51a.4.4 0 0 1 .051.201v.245a.4.4 0 0 1-.05.2l-1.104 1.938c.244.65.593 1.258 1.035 1.798l2.214.01q.114.002.211.06c.069.043.143.084.21.123a.4.4 0 0 1 .152.151l1.115 1.924a6.4 6.4 0 0 0 2.052 0l1.118-1.927a.4.4 0 0 1 .154-.148q.107-.059.208-.122a.4.4 0 0 1 .211-.06l2.212-.008a6.4 6.4 0 0 0 1.032-1.804L12.857 8.32a.4.4 0 0 1-.05-.201v-.254a.4.4 0 0 1 .05-.192l1.105-1.937a6.4 6.4 0 0 0-1.035-1.802l-2.214-.01a.4.4 0 0 1-.21-.06c-.07-.042-.143-.082-.21-.12a.4.4 0 0 1-.154-.15L9.025 1.666v.002a6.3 6.3 0 0 0-2.052.001L5.854 3.598a.4.4 0 0 1-.153.148c-.07.039-.143.08-.21.122a.4.4 0 0 1-.21.06l-2.211.007a6.4 6.4 0 0 0-1.033 1.804z"
+                        clip-rule="evenodd" />
+                </svg>
+
+                <p>Administration</p>
+            </div>
+
+
+        </aside>
+
+        <main class="color2">
+            <div class="subMain1">
+                <div class="headDiv1">
+                    <input type="search" placeholder="search here">
+                </div>
+                <div class="headDiv2">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                            <path d="M0 0h1024v1024H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M816 768h-24V428c0-141.1-104.3-257.7-240-277.1V112c0-22.1-17.9-40-40-40s-40 17.9-40 40v38.9c-135.7 19.4-240 136-240 277.1v340h-24c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h216c0 61.8 50.2 112 112 112s112-50.2 112-112h216c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32M512 888c-26.5 0-48-21.5-48-48h96c0 26.5-21.5 48-48 48M304 768V428c0-55.6 21.6-107.8 60.9-147.1S456.4 220 512 220s107.8 21.6 147.1 60.9S720 372.4 720 428v340z" />
+                        </svg>
+
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M19.435 4.065H4.565a2.5 2.5 0 0 0-2.5 2.5v10.87a2.5 2.5 0 0 0 2.5 2.5h14.87a2.5 2.5 0 0 0 2.5-2.5V6.565a2.5 2.5 0 0 0-2.5-2.5m-14.87 1h14.87a1.49 1.49 0 0 1 1.49 1.39c-2.47 1.32-4.95 2.63-7.43 3.95a6 6 0 0 1-1.06.53a2.08 2.08 0 0 1-1.67-.39c-1.42-.75-2.84-1.51-4.25-2.26c-1.14-.6-2.3-1.21-3.44-1.82a1.49 1.49 0 0 1 1.49-1.4m16.37 12.37a1.5 1.5 0 0 1-1.5 1.5H4.565a1.5 1.5 0 0 1-1.5-1.5V7.6c2.36 1.24 4.71 2.5 7.07 3.75a5.6 5.6 0 0 0 1.35.6a2.87 2.87 0 0 0 2-.41c1.45-.76 2.89-1.53 4.34-2.29c1.04-.56 2.07-1.1 3.11-1.65Z" />
+                        </svg>
+
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M0 0h36v36H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M29.2 26.72a12.07 12.07 0 0 1-6.3-22.28A13.7 13.7 0 0 0 19.49 4a14 14 0 0 0 0 28a13.82 13.82 0 0 0 10.9-5.34a12 12 0 0 1-1.19.06"
+                                class="clr-i-solid clr-i-solid-path-1" />
+                            <path fill="none" d="M0 0h36v36H0z" />
+                        </svg>
+
+                          
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m0 5c1.73 0 3 1.27 3 3s-1.27 3-3 3s-3-1.27-3-3s1.27-3 3-3m0 13a7.98 7.98 0 0 1-5.48-2.18C7.33 16.16 9.03 15 11 15h2c1.97 0 3.66 1.16 4.47 2.82A7.94 7.94 0 0 1 12 20" />
+                        </svg>
+                        <% if( user){ %>
+                            <%= (user.name) %>
+                                <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="subMain2">
+
+
+                <form action="/upload-profile-photo" method="post" enctype="multipart/form-data">
+                    <input type="file" name="myProfilePhoto" id="">
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

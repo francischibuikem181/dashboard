@@ -1,0 +1,18 @@
+<h1>
+    <%= names[0] %>
+        hello world
+</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat numquam ullam porro. Ullam, nam iure reiciendis et
+    totam sint quia ut eligendi ducimus, reprehenderit ipsum, quis ipsam laboriosam. Non, ratione?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero dolor esse aperiam tempora sapiente quo cumque beatae
+    consequatur, obcaecati quibusdam dolore excepturi odit, doloribus vitae ratione alias? At, ipsa eligendi.</p>
+<% if (names.length> 0) { %>
+    <p>names has data</p>
+    <% }else{ %>
+        <p>names is empty</p>
+        <%}%>
+            <% names.forEach((item)=>{%>
+                <%= item %>  
+                    <% }); %>
+
+ 

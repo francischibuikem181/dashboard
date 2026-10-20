@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="display"></div>
+    <form id="formTag">
+        <input type="text" id="firstName" placeholder="FristName">
+        <input type="text" id="lastName" placeholder="lastName">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="password">
+        <button type="submit" name="login">Login</button>
+    </form>
+
+
+
+    <script>
+        const firstName = document.getElementById("firstName")
+        const lastName = document.getElementById("lastName")
+        const email = document.getElementById("email")
+        const password = document.getElementById("password")
+        const formTag = document.getElementById("formTag")
+        const display = document.getElementById("display")
+        formTag.addEventListener('submit', async (event) => {
+            event.preventDefault()
+
+            const payLoad = {
+                firstName: firstName.value,
+                lastName: lastName.value,
+                email: email.value,
+                password: password.value
+            }
+            const response = await fetch('/test-post', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payLoad)
+            })
+            if (response.ok) {
+                console.log('success')
+            } else {
+                const errorJson = await response.json()
+                console.log(errorJson)
+                if(errorJson.errors){
+
+                    display.innerText = errorJson.errors[0]
+                }
+                if( errorJson.error){
+                     display.innerText = errorJson.error
+                
+                }
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
