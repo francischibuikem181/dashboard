@@ -76,9 +76,9 @@ server.use(indexRouter);
 server.set("view engine", "ejs");
 server.set("views", path.join(__dirname, "views"));
 
-server.get("/", (req, res) => {
-  res.render("index", { name: "john" });
-});
+// server.get("", (req, res) => {
+//   res.render("index", { name: "john" });
+// });
 server.get("/about", (req, res) => {
   res.send("about page");
 });
@@ -244,14 +244,14 @@ server.get("/hash-password", async (req, res) => {
   res.send(hash);
 });
 
-server.get("verify-password", async (req, res) => {
+server.get("/verify-password", async (req, res) => {
   const hashed = req.query.hash;
   const result = await bcrypt.compare("1234", hashed);
   res.send(result);
 });
 const { ForDash } = require("./middlewares/logger");
 
-server.get("/dashboard", (req, res) => {
+server.get("/", (req, res) => {
   const user = req.session.user
   res.render("dashboard", {user});
 });
