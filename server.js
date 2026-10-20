@@ -77,7 +77,6 @@ server.set("view engine", "ejs");
 server.set("views", path.join(__dirname, "views"));
 
 server.get("/", (req, res) => {
-  console.log(req);
   res.render("index", { name: "john" });
 });
 server.get("/about", (req, res) => {

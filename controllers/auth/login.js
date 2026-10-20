@@ -10,7 +10,7 @@ const signupUser = async (req,res)=>{
 return res.send('hi from controller arrow function');
 }
 
-
+ 
 class AuthFunctions{
 async forgotpwd(req, res) {
 return res.send('hi from controller class method')
@@ -39,21 +39,23 @@ class forLoginPost{
             if(!Cresult){
                 return res.send('password dosent match')
             }else{
-                const user = {
+                 const user = {
                     id: data.id,
                     name: data.name,
                     email: data.email,
 
                 }
                 req.session.user = user
-                console.log(req.session.user)
-                // console.log('welcome user')
+                // console.log(req.session.user)
+                // console.log('welcome user')  
                 res.redirect('/dashboard')
             }
             
         } catch (error) {
-            
+            console.error('Error occurred while logging in user:', error);
+ 
         }
+        
     }
 }
 
